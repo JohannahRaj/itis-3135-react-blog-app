@@ -1,0 +1,112 @@
+:root{
+    --clr-cream: hsl(45, 44%, 96%);
+    --clr-orange: hsl(42, 85%, 52%);
+    --clr-goldenrod: hsl(55, 79%, 63%);
+    --clr-orange-visited: hsl(42, 81%, 37%);
+    --clr-goldenrod-visited: hsl(55, 79%, 37%);
+    --clr-light-gray-blue: hsl(210, 46%, 95%);
+    --clr-gray-blue: hsl(217, 19%, 35%);
+    --clr-dark-blue: hsl(216, 32%, 24%);
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+  font: 18px/145% var(--sans);
+}
+
+body{
+  background: var(--clr-light-gray-blue);
+  margin: 0;
+}
+
+#root{
+  background: var(--clr-light-gray-blue);
+  width: min(100%, 1126px);
+  border: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+/*
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}*/
+
+.blogpost{
+    border: 1px var(--clr-gray-blue);
+    background-color: var(--clr-gray-blue);
+    color: var(--clr-dark-blue);
+    /*overflow: hidden;*/
+    max-width: 800px;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+}
+
+.card1{
+  background: white;
+  box-shadow: 0 4px 14px rgba(14, 26, 67, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.card-header{
+  text-align: left;
+}
+
+.card-body h3{
+  margin-top: 0;
+  text-align: left;
+}
+
+.card-body p{
+  line-height: 1.6;
+  text-align: left;
+}
+
+.comments ul {
+  list-style: none;
+  padding-left: 0;
+}
